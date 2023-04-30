@@ -35,7 +35,6 @@ for i in range(len(node_ids)-1):
     lng = current_node['lon']
     api_key = "GSM_API_KEY"
     location = f"{lat},{lng}" # latitude,longitude
-
     url = f"https://maps.googleapis.com/maps/api/streetview?size=600x300&head={ahead}&location={location}&key={api_key}"
     response = urllib2.urlopen(url)
 	
